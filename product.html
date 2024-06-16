@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="wght=device-width, initial-scale=1.0">
-    <title>WizeStore</title>
+    <title>All Products-WizeStore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
@@ -17,8 +17,6 @@
 
 <body>
     <div class="header">
-
-
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -27,7 +25,7 @@
                 <nav>
                     <ul id="Menuitems">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product </a></li>
+                        <li><a href="">Product </a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
@@ -36,45 +34,72 @@
                 <img src="images/cart.png" alt="" width="30px" height="30px">
                 <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Experience <br>A New Headset! </h1>
-                    <p>Circumaural stereo headset with cable remote control
-                        Maximum sound for gaming and multimedia applications on PC and console
-                        Excellent intelligibility thanks to high-quality microphone capsule
-                        Silky-soft velour ear pads for pleasant wearing comfort over many hours
-                        Made in Germany </p>
-                    <a href="https://s.shopee.co.th/2fq1JQzj2w" target="_blank" rel="noopener noreferrer"
-                        class="btn">Explore Now &#8594; </a>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1.png">
-                </div>
-            </div>
-
         </div>
-
     </div>
-    <!------------ feature categories------------>
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" height="332.08" >
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg" height="332.08">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg" height="332.08">
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!------------ feature product------------>
+    
     <div class="small-container">
-        <h2 class="title">Feature Product</h2>
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default shorting</option>
+                <option>Short by price</option>
+                <option>Short by popurarity</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" >
+                <h4>Edifier WH950NB</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>฿4,090</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="">
+                <h4>DT 770 PRO X Limited Edition</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>฿8,990</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg"  >
+                <h4 >HyperX Cloud III</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>฿2,890</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" >
+                <h4>EGA Type H12</h4>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>฿379</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-1.jpg" >
@@ -127,7 +152,6 @@
 
         </div>
 
-        <h2 class="title">Latest Product</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="">
@@ -231,79 +255,16 @@
 
         </div>
 
+        <div class="page-btn">
+             <span>1</span>
+             <span>2</span>
+             <span>3</span>
+             <span>4</span>
+             <span>&#8594;</span>
+         </div>
     </div>
-    <!----------------offer----------------->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/th-11134207-preview.png" alt="" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on Wize</p>
-                    <h1>HyperX Cloud III</h1>
-                    <small>
-                        The HyperX Cloud III is an evolution of our legendary Cloud II, which is known for its comfort,
-                        sound quality, and durability. With plush HyperX signature memory foam in the headband and ear
-                        cushions,
-                        it provides a comfortable fit perfect for long gaming sessions. It also features new, retuned
-                        53mm drivers that are angled for an optimal listening experience..
-                    </small><br>
-                    <a href="https://s.shopee.co.th/5VACfZ2nwm" target="_blank" rel="noopener noreferrer"
-                        class="btn">Buy Now &#8594; </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------testimonial--------------->
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever </p>
-                    <div class="rating">
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </div>
-                    <img src="images/user-1.png" alt="">
-                    <h3>Sean ParKer</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever </p>
-                    <div class="rating">
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </div>
-                    <img src="images/user-2.png" alt="">
-                    <h3>Dean Kerba</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever </p>
-                    <div class="rating">
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </div>
-                    <img src="images/user-3.png" alt="">
-                    <h3>Hean PaKe</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    
     <footer>
         <div class="container">
             <p>Copyright © 2024. All Rights Reserved.</p>
