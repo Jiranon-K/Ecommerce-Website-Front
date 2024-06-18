@@ -373,6 +373,18 @@ input:focus {
     flex-basis: 24%;
     cursor: pointer;
 }
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: rgb(255, 255, 255);
+    padding-bottom: 70%;
+    
+
+  }
+  .about-section h1{
+    margin-bottom: 15px;
+  }
 
 
 
