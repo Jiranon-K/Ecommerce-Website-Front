@@ -20,7 +20,9 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo-white-1.png" alt="" width="125px">
+                    <a href="index.html">
+                        <img src="images/logo-white-1.png" alt="" width="125px">
+                    </a>
                 </div>
                 <nav>
                     <ul id="Menuitems">
@@ -31,15 +33,17 @@
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
-                <img src="images/cart.png" alt="" width="30px" height="30px">
+                <a href="cart.html">
+                    <img src="images/cart.png" alt="" width="30px" height="30px">
+                </a>
                 <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
     </div>
 
     <div class="about-section">
-        <h1>No contact</h1>
-        <p>This website is for studying web making.</p>
+        <h1>Contact</h1>
+        <p style="color: #2c2c2c;">This website is for studying web making.</p>
       </div>
 
 
@@ -58,6 +62,22 @@
     </footer>
     <!-- js for tohhle menu -->
    
+   <script>
+    var Menuitems = document.getElementById("Menuitems")
+
+    Menuitems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (Menuitems.style.maxHeight == "0px") {
+
+            Menuitems.style.maxHeight = "200px"
+        }
+        else {
+            Menuitems.style.maxHeight = "0px"
+        }
+    }
+
+</script>
 
 
 

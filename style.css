@@ -346,7 +346,7 @@ select:focus {
 
 .single-product input {
 
-    width: 50px;
+    width: 80px;
     height: 40px;
     padding-left: 10px;
     font-size: 20px;
@@ -376,8 +376,8 @@ input:focus {
 .about-section {
     padding: 50px;
     text-align: center;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: rgb(255, 255, 255);
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     padding-bottom: 70%;
     
 
@@ -386,11 +386,55 @@ input:focus {
     margin-bottom: 15px;
   }
 
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info p{
+    color: #000000;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-image: linear-gradient(135deg, #667eea 0%, #667eea 100%);
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #4f3bff;
+    width: 100%;
+    max-width: 400px;
 
-
-
-
-
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 
 
 
@@ -453,6 +497,9 @@ input:focus {
     .col-2-details h1 {
         font-size: 25px;
         line-height: 32px;
+    }
+    .cart-info p {
+        display: none;
     }
 
 }

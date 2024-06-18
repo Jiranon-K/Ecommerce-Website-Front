@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wght=device-width, initial-scale=1.0">
+    <title>Products-Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-white-1.png" alt="" width="125px">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="Menuitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product </a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="images/cart.png" alt="" width="30px" height="30px">
+                </a>
+                <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!-- cart item -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product-5.jpg" >
+                        <div>
+                            <p>SteelSeries Arctis 7</p>
+                            <small style="color: #2c2c2c;" >Price: ฿8,990</small>
+                            <br>
+                            <a href="" style="color: #d34a32;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>฿8,990</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product-7.jpg" >
+                        <div>
+                            <p>SoundPEATS SPACE</p>
+                            <small style="color: #2c2c2c;" >Price: ฿2,099</small>
+                            <br>
+                            <a href="" style="color: #d34a32;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>฿2,099</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product-9.jpg" >
+                        <div>
+                            <p>ASUS Vivowatch 5 AERO</p>
+                            <small style="color: #2c2c2c;" >Price: ฿3,990</small>
+                            <br>
+                            <a href="" style="color: #d34a32;">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>฿3,990</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>฿15,079</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>฿79</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>15,158</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- js for tohhle menu -->
+    <script>
+        var Menuitems = document.getElementById("Menuitems")
+
+        Menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (Menuitems.style.maxHeight == "0px") {
+
+                Menuitems.style.maxHeight = "200px"
+            }
+            else {
+                Menuitems.style.maxHeight = "0px"
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
