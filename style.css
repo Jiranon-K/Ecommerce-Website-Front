@@ -63,7 +63,7 @@ p {
 
 .col-2 img {
     max-width: 100%;
-    padding: 10px 0;
+    padding: 25px 0px;
 
 }
 
@@ -73,6 +73,7 @@ p {
     line-height: 60px;
     margin: 25px 0;
 }
+
 .reated p {
     color: #0a0a0a;
     font-weight: 600;
@@ -80,8 +81,8 @@ p {
 
 .btn {
     display: inline-block;
-    background: #ff391e;
-    color: #fff;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    color: #ffffff;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
@@ -281,7 +282,7 @@ footer {
 }
 
 select {
-    border: 1px solid #4f3bff;
+    border: 1px solid #764ba2;
     padding: 5px;
 }
 
@@ -295,7 +296,7 @@ select:focus {
 
 .page-btn span {
     display: inline-block;
-    border: 1px solid #4f3bff;
+    border: 1px solid #764ba2;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -373,70 +374,167 @@ input:focus {
     flex-basis: 24%;
     cursor: pointer;
 }
+
 .about-section {
     padding: 50px;
     text-align: center;
     background: #ffffff;
     color: rgb(0, 0, 0);
-    padding-bottom: 70%;
-    
-
-  }
-  .about-section h1{
-    margin-bottom: 15px;
-  }
-
-.cart-page{
-    margin: 80px auto;
+    padding-bottom: 39%;
 }
-table{
+
+.about-section h1 {
+    margin-bottom: 15px;
+}
+
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding-bottom: 39%;
+}
+
+.contact-section h1 {
+    margin-bottom: 15px;
+}
+
+.cart-page {
+    margin: 80px auto;
+    padding-bottom: 20%;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
-.cart-info{
+
+.cart-info {
     display: flex;
     flex-wrap: wrap;
 }
-.cart-info p{
+
+.cart-info p {
     color: #000000;
 }
-th{
+
+th {
     text-align: left;
     padding: 5px;
     color: #fff;
     background-image: linear-gradient(135deg, #667eea 0%, #667eea 100%);
 }
-td{
+
+td {
     padding: 10px 5px;
 }
-td input{
+
+td input {
     width: 50px;
     height: 30px;
     padding: 5px;
 }
-td img{
+
+td img {
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
-.total-price{
+
+.total-price {
     display: flex;
     justify-content: flex-end;
 }
-.total-price table{
+
+.total-price table {
     border-top: 3px solid #4f3bff;
     width: 100%;
     max-width: 400px;
 
 }
-td:last-child{
-    text-align: right;
-}
-th:last-child{
+
+td:last-child {
     text-align: right;
 }
 
+th:last-child {
+    text-align: right;
+}
 
+.account-page{
+    padding: 220px 0 220px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0,1);
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+
+}
+.form-btn {
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #4f3bff;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
 
 
 
@@ -498,6 +596,7 @@ th:last-child{
         font-size: 25px;
         line-height: 32px;
     }
+
     .cart-info p {
         display: none;
     }
